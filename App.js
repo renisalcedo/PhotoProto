@@ -1,6 +1,9 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+// Required models components
+import Models from './components/models/models';
+
 export default class App extends React.Component {
   render() {
     return (
