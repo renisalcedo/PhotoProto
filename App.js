@@ -2,15 +2,17 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 // Required models components
-import Models from './components/models/models';
+// import Models from './components/models/models';
+import Ui from './components/ui/Ui.js';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.blue}>ProtoPhoto</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+        <Ui />
+        <View style={{height: 100, backgroundColor: 'powderblue'}} />
+        <View style={{height: 100, backgroundColor: 'skyblue'}} />
       </View>
     );
   }
@@ -19,9 +21,9 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(180, 52, 52, 0.5)',
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'space-between',
 
   },
 
